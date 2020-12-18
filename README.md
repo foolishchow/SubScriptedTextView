@@ -2,6 +2,12 @@
 
 ![screenshot](./screenshot/screenshot.jpg)   
 
+## use
+```gradle
+implementation 'me.foolishchow.android:SubScriptedTextView:0.0.3'
+```
+
+## sample code
 ```xml
 <me.foolishchow.android.widget.SubScriptedTextView
             android:id="@+id/focus_sub_pause_times"
