@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <me.foolishchow.android.widget.SubScriptedTextView
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text=" Your "
+        android:textSize="35sp"
+        app:ss_bottom_font_family="@font/roboto_medium"
+        app:ss_bottom_text="simple static SpannableString wrapper for TextView"
+        app:ss_bottom_text_color="#666666"
+        app:ss_bottom_text_size="15dp"
+        app:ss_left_font_family="@font/roboto"
+        app:ss_left_text="SubScript  "
+        app:ss_left_text_color="#FF3F25"
+        app:ss_left_text_size="15dp"
+        app:ss_right_font_family="@font/roboto_bold"
+        app:ss_right_text="TextView"
+        app:ss_right_text_align="center"
+        app:ss_right_text_color="#999999"
+        app:ss_right_text_size="15dp"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+
+        <me.foolishchow.android.widget.SubScriptedTextView
+            android:id="@+id/focus_sub_pause_times"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            app:ss_bottom_text="STORAGE"
+            app:ss_bottom_text_color="#666666"
+            app:ss_bottom_text_size="12dp"
+            app:ss_left_font_family="@font/file_roboto_medium"
+            app:ss_left_text="↑ "
+            app:ss_left_text_align="top"
+            app:ss_left_text_color="#FF3F25"
+            app:ss_left_text_size="10dp"
+            app:ss_right_text=" %"
+            app:ss_right_text_color="#999999"
+            app:ss_right_text_size="10dp"
+            tools:ignore="HardcodedText" />
+
+        <me.foolishchow.android.widget.SubScriptedTextView
+            android:id="@+id/focus_sub_pause_times1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            app:ss_bottom_text="MEMORY"
+            app:ss_bottom_text_color="#666666"
+            app:ss_bottom_text_size="12dp"
+            app:ss_right_text=" %"
+            app:ss_right_text_color="#999999"
+            app:ss_right_text_size="10dp"
+            tools:ignore="HardcodedText" />
+
+        <me.foolishchow.android.widget.SubScriptedTextView
+            android:id="@+id/focus_sub_pause_times2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            app:ss_bottom_text="CPU"
+            app:ss_bottom_text_align="bottom"
+            app:ss_bottom_text_color="#666666"
+            app:ss_bottom_text_size="12dp"
+            app:ss_right_text=" %"
+            app:ss_right_text_color="#999999"
+            app:ss_right_text_size="10dp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <me.foolishchow.android.widget.SubScriptedTextView
+        android:id="@+id/focus_sub_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="99"
+        android:textAlignment="center"
+        android:textColor="#ffff6329"
+        android:textSize="28sp"
+        app:ss_bottom_text="Current Score"
+        app:ss_bottom_text_color="#ffac8e73"
+        app:ss_bottom_text_size="14dp"
+        app:ss_right_text=" scores"
+        app:ss_right_text_color="#ffff6329"
+        app:ss_right_text_size="14dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

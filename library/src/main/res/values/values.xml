@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SubScriptedTextView">
+        <attr name="ss_left_text_style">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <!-- left font family. -->
+        <attr name="ss_left_font_family" format="reference" />
+        <attr name="ss_left_text" format="string" />
+        <attr name="ss_left_text_color" format="color" />
+        <attr name="ss_left_text_size" format="dimension" />
+        <!--        <attr name="ss_left_text_padding" format="dimension" />-->
+        <attr name="ss_left_text_align" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="center" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+        <attr name="ss_right_font_family" format="string" />
+        <attr name="ss_right_text" format="string" />
+        <attr name="ss_right_text_color" format="color" />
+        <attr name="ss_right_text_size" format="dimension" />
+        <!--        <attr name="ss_right_text_padding" format="dimension" />-->
+        <attr name="ss_right_text_align" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="center" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+        <!--        <attr name="ss_top_font_family" format="string" />-->
+        <!--        <attr name="ss_top_text" format="string" />-->
+        <!--        <attr name="ss_top_text_color" format="color" />-->
+        <!--        <attr name="ss_top_text_size" format="dimension" />-->
+        <!--        <attr name="ss_top_text_padding" format="dimension" />-->
+        <attr name="ss_bottom_font_family" format="string" />
+        <attr name="ss_bottom_text" format="string" />
+        <attr name="ss_bottom_text_color" format="color" />
+        <attr name="ss_bottom_text_size" format="dimension" />
+        <attr name="ss_bottom_text_padding" format="dimension" />
+        <attr name="ss_bottom_text_align" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="center" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
