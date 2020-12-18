@@ -4,7 +4,7 @@
 
 ## use
 ```gradle
-implementation 'me.foolishchow.android:SubScriptedTextView:0.0.3'
+implementation 'me.foolishchow.android:SubScriptedTextView:0.0.4'
 ```
 
 ## sample code
