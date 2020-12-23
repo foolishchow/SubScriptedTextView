@@ -1,4 +1,4 @@
-package me.foolishchow.android.widget;
+package me.foolishchow.android.subscriptedtextview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -25,6 +25,10 @@ import androidx.annotation.StyleableRes;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.res.ResourcesCompat;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+
 public class SubScriptedTextView extends AppCompatTextView {
     public SubScriptedTextView(@NonNull Context context) {
         this(context, null);
@@ -43,6 +47,7 @@ public class SubScriptedTextView extends AppCompatTextView {
     public static final int VERTICAL_ALIGN_CENTER = 1;
     public static final int VERTICAL_ALIGN_BOTTOM = 0;
 
+    @Retention(RetentionPolicy.SOURCE)
     @IntDef({VERTICAL_ALIGN_BOTTOM, VERTICAL_ALIGN_CENTER, VERTICAL_ALIGN_TOP})
     public @interface VerticalAlign {
     }
