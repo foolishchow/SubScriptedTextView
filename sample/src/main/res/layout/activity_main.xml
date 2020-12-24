@@ -20,6 +20,7 @@
         app:ss_bottom_text="simple static SpannableString wrapper for TextView"
         app:ss_bottom_text_color="#666666"
         app:ss_bottom_text_size="15dp"
+        app:ss_bottom_text_align="top"
         app:ss_left_font_family="@font/roboto"
         app:ss_left_text="SubScript  "
         app:ss_left_text_color="#FF3F25"
@@ -42,6 +43,7 @@
 
 
         <me.foolishchow.android.subscripted.SubScriptedTextView
+            android:fontFamily="@font/roboto_medium"
             android:id="@+id/focus_sub_pause_times"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -111,6 +113,7 @@
         android:textAlignment="center"
         android:textColor="#ffff6329"
         android:textSize="28sp"
+        app:ss_bottom_text_align="top"
         app:ss_bottom_text="Current Score"
         app:ss_bottom_text_color="#ffac8e73"
         app:ss_bottom_text_size="14dp"
@@ -121,17 +124,21 @@
 
 
     <me.foolishchow.android.subscripted.SubScriptedTextView
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
+        android:background="#03DAC5"
         android:layout_height="wrap_content"
-        android:text="CENTER"
+        android:layout_gravity="center_horizontal"
+        android:text="  CENTER  "
         android:textSize="30sp"
-        android:fontFamily="@font/roboto_medium"
-        app:ss_left_text="LEFT  "
+        app:ss_left_text="LEFT-TOP"
+        app:ss_left_text_align="top"
         app:ss_left_text_size="12dp"
-        app:ss_left_text_align="center"
-        app:ss_right_text=" RIGHT"
-        app:ss_right_text_size="12dp"
-        app:ss_right_text_align="center"
-        />
+        app:ss_right_text="RIGHT-BOTTOM"
+        app:ss_right_text_align="bottom"
+        app:ss_right_text_size="12dp" />
+
+
+
+
+
 </LinearLayout>
