@@ -1,8 +1,9 @@
-package me.foolishchow.android.subscriptedtextview;
+package me.foolishchow.subscripted;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 
 public class MainActivity extends AppCompatActivity {
 

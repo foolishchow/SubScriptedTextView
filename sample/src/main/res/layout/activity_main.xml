@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="me.foolishchow.subscripted.MainActivity">
 
-    <me.foolishchow.android.subscriptedtextview.SubScriptedTextView
+    <me.foolishchow.android.subscripted.SubScriptedTextView
         android:id="@+id/ss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         android:paddingRight="30dp">
 
 
-        <me.foolishchow.android.subscriptedtextview.SubScriptedTextView
+        <me.foolishchow.android.subscripted.SubScriptedTextView
             android:id="@+id/focus_sub_pause_times"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             app:ss_right_text_size="10dp"
             tools:ignore="HardcodedText" />
 
-        <me.foolishchow.android.subscriptedtextview.SubScriptedTextView
+        <me.foolishchow.android.subscripted.SubScriptedTextView
             android:id="@+id/focus_sub_pause_times1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
             app:ss_right_text_size="10dp"
             tools:ignore="HardcodedText" />
 
-        <me.foolishchow.android.subscriptedtextview.SubScriptedTextView
+        <me.foolishchow.android.subscripted.SubScriptedTextView
             android:id="@+id/focus_sub_pause_times2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
 
     </LinearLayout>
 
-    <me.foolishchow.android.subscriptedtextview.SubScriptedTextView
+    <me.foolishchow.android.subscripted.SubScriptedTextView
         android:id="@+id/focus_sub_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -118,4 +118,20 @@
         app:ss_right_text_color="#ffff6329"
         app:ss_right_text_size="14dp"
         tools:ignore="HardcodedText" />
+
+
+    <me.foolishchow.android.subscripted.SubScriptedTextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CENTER"
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_medium"
+        app:ss_left_text="LEFT  "
+        app:ss_left_text_size="12dp"
+        app:ss_left_text_align="center"
+        app:ss_right_text=" RIGHT"
+        app:ss_right_text_size="12dp"
+        app:ss_right_text_align="center"
+        />
 </LinearLayout>

@@ -1,4 +1,4 @@
-package me.foolishchow.android.subscriptedtextview;
+package me.foolishchow.android.subscripted;
 
 import org.junit.Test;
 

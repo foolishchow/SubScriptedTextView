@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "me.foolishchow.android.subscriptedtextview"
+        applicationId "me.foolishchow.subscripted"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

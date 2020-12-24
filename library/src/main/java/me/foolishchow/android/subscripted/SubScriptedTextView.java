@@ -1,4 +1,4 @@
-package me.foolishchow.android.subscriptedtextview;
+package me.foolishchow.android.subscripted;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
