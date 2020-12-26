@@ -7,12 +7,12 @@
 
 ## use
 ```gradle
-implementation 'me.foolishchow.android:SubScriptedTextView:0.0.4'
+implementation 'me.foolishchow.android:SubScriptedTextView:0.0.7'
 ```
 
 ## sample code
 ```xml
-<me.foolishchow.android.widget.SubScriptedTextView
+<me.foolishchow.android.subscripted.SubScriptedTextView
             android:id="@+id/focus_sub_pause_times"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
