@@ -1,11 +1,12 @@
 # SubScriptedTextView
 
-[![Download](https://api.bintray.com/packages/foolishchow/android/SubScriptedTextView/images/download.svg) ](https://bintray.com/foolishchow/android/SubScriptedTextView/_latestVersion)
 
 
 ![screenshot](./screenshot/screenshot.jpg)   
 
 ## use
+[![Download](https://api.bintray.com/packages/foolishchow/android/SubScriptedTextView/images/download.svg) ](https://bintray.com/foolishchow/android/SubScriptedTextView/_latestVersion)
+
 ```gradle
 implementation 'me.foolishchow.android:SubScriptedTextView:0.0.7'
 ```
