@@ -27,11 +27,17 @@
             <enum name="center" value="1" />
             <enum name="top" value="2" />
         </attr>
-        <!--        <attr name="ss_top_font_family" format="string" />-->
-        <!--        <attr name="ss_top_text" format="string" />-->
-        <!--        <attr name="ss_top_text_color" format="color" />-->
-        <!--        <attr name="ss_top_text_size" format="dimension" />-->
-        <!--        <attr name="ss_top_text_padding" format="dimension" />-->
+        <attr name="ss_top_font_family" format="string" />
+        <attr name="ss_top_text" format="string" />
+        <attr name="ss_top_text_color" format="color" />
+        <attr name="ss_top_text_size" format="dimension" />
+        <attr name="ss_top_text_padding" format="dimension" />
+        <attr name="ss_top_text_align" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="center" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+
         <attr name="ss_bottom_font_family" format="string" />
         <attr name="ss_bottom_text" format="string" />
         <attr name="ss_bottom_text_color" format="color" />

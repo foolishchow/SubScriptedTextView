@@ -31,6 +31,9 @@ public class SubScriptedTextView extends AppCompatTextView {
     }
 
     @Nullable
+    private SpannableString mTopSubScript;
+
+    @Nullable
     private SpannableString mLeftSubScript;
     @Nullable
     private SpannableString mRightSubScript;
@@ -39,6 +42,18 @@ public class SubScriptedTextView extends AppCompatTextView {
 
     private void initAttribute(Context context, @Nullable AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.SubScriptedTextView);
+
+        String topSubscript = ta.getString(R.styleable.SubScriptedTextView_ss_top_text);
+        if (!TextUtils.isEmpty(topSubscript)) {
+            mTopSubScript = createSubscript(topSubscript, ta,
+                    R.styleable.SubScriptedTextView_ss_top_text_size,
+                    R.styleable.SubScriptedTextView_ss_top_text_color,
+                    R.styleable.SubScriptedTextView_ss_top_font_family,
+                    R.styleable.SubScriptedTextView_ss_top_text_align,
+                    SubScriptedVerticalAlign.VERTICAL_ALIGN_BOTTOM
+            );
+        }
+
 
         String leftSubscript = ta.getString(R.styleable.SubScriptedTextView_ss_left_text);
         if (!TextUtils.isEmpty(leftSubscript)) {
@@ -117,7 +132,7 @@ public class SubScriptedTextView extends AppCompatTextView {
 
     @Override
     public void setText(CharSequence text, BufferType type) {
-        if (mLeftSubScript != null || mRightSubScript != null) {
+        if (mLeftSubScript != null || mRightSubScript != null || mTopSubScript != null || mBottomSubScript != null) {
             super.setText(createText(text), BufferType.SPANNABLE);
         } else {
             super.setText(text, type);
@@ -132,6 +147,9 @@ public class SubScriptedTextView extends AppCompatTextView {
         } else {
             mTextBuilder.clearSpans();
             mTextBuilder.clear();
+        }
+        if(mTopSubScript != null){
+            mTextBuilder.append(mTopSubScript).append("\n");
         }
         if (mLeftSubScript != null) {
             mTextBuilder.append(mLeftSubScript);
