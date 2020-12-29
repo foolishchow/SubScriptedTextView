@@ -16,6 +16,10 @@
         android:fontFamily="@font/roboto_medium"
         android:text=" Your "
         android:textSize="35sp"
+        app:ss_top_text="SubScriptedTextView"
+        app:ss_top_text_color="@color/colorPrimary"
+        app:ss_top_text_align="center"
+        app:ss_top_text_size="20sp"
         app:ss_bottom_font_family="@font/roboto_medium"
         app:ss_bottom_text="simple static SpannableString wrapper for TextView"
         app:ss_bottom_text_color="#666666"
@@ -135,8 +139,26 @@
         app:ss_left_text_size="12dp"
         app:ss_right_text="RIGHT-BOTTOM"
         app:ss_right_text_align="bottom"
-        app:ss_right_text_size="12dp" />
+        app:ss_right_text_size="12dp"
+        tools:ignore="HardcodedText" />
 
+    <me.foolishchow.android.subscripted.SubScriptedTextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:background="#03DAC5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="CENTER"
+        android:textSize="30sp"
+        app:ss_top_text="TOP"
+        app:ss_top_text_align="top"
+        app:ss_top_text_size="12dp"
+        app:ss_bottom_text="BOTTOM"
+        app:ss_bottom_text_color="@color/colorPrimaryDark"
+        app:ss_bottom_text_align="bottom"
+        app:ss_bottom_text_size="12dp"
+        tools:ignore="HardcodedText" />
 
 
 
